@@ -16,6 +16,7 @@ function App() {
     setIsOpen(!isOpen)
   };
 
+  //i still don't understand this code.S 
   useEffect(() => {
     const hideMenu = () => {
       if (window.innerWidth > 768 && isOpen) {

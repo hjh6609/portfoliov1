@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 // import './index.css';
 
 const Hero = () => {
@@ -9,7 +9,7 @@ const Hero = () => {
                 <h1 className="hero-front">
                     LUCY'S PORTFOLIO
                 </h1>
-                <Link className="hero-btn-go-to" to="/portfolio">
+                {/* <Link className="hero-btn-go-to" to="/portfolio">
                     Go to see
                     <svg
                         className="w-6 h-6 ml-4"
@@ -28,7 +28,7 @@ const Hero = () => {
                             2.122m-5.657 5.656l-2.12 2.122"
                         />
                     </svg>
-                </Link>
+                </Link> */}
             </div>
         </div>
     )

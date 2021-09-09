@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,7 @@
 /* all of font in this site */
 
 *{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     /* font-size: 19px; */
 }
 
@@ -15,6 +15,12 @@
 .menu-card{
     @apply flex flex-col justify-center items-center
     bg-white h-screen font-mono py-40;
+}
+
+/* portfolio.js */
+.portfolio{
+    @apply flex flex-col justify-center items-center
+    bg-white h-screen font-mono py-40 m-36;
 }
 
 .center-content{
@@ -37,4 +43,10 @@
 .hero-front{
     @apply lg:text-9xl md:text-7xl 
     sm:text-5xl text-3xl  font-black mb-14;
+}
+
+/* portfolio.js git,view button */
+.pro-button{
+    @apply text-center text-gray-600 bg-gray-200 
+    hover:bg-white rounded-md;
 }

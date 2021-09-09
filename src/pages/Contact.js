@@ -2,12 +2,20 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div className="h-screen flex jutisfy-center 
-        items-center bg-white-300">
-            <h1 className="text-9xl uppercase font-black">
-                Call me baby!
-            </h1>
+        <>
+        <div className="h-screen flex justify-center items-center"> {/* bg-yellow-100 */}
+            <div className="p-2 h-96 m-5 p-5 w-4/2 font-bold text-center">
+                <h2 className="text-2xl mb-2 text-center">
+                    Lucy 😊
+                </h2>
+                <p className="mb-2 text-center">
+                    hjh6609@gmail.com 
+                </p>
+                
+            </div>
         </div>
+        <div className="h-full">&nbsp;</div>
+        </>
     )
 }
 
