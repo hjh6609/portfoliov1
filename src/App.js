@@ -11,8 +11,12 @@ import About from './pages/about';
 import Contact from './pages/Contact';
 import port from './pages/port'; //portfolio component test
 import Portfolio from './pages/portfolio';
+import browserHistory from 'history/createBrowserHistory'
+
 
 function App() {
+
+  const [int, setInt] = useState(true);
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -34,6 +38,7 @@ function App() {
     }
   })
 
+
   return (
     <>
       <Navbar toggle={ toggle } />
@@ -45,8 +50,8 @@ function App() {
         <Route path="/contact" exact component={Contact} />
         <Route path="/port" exact component={port} />
       </Switch>
-      <Hero />
-      <Content />
+      
+      { int === false ? (<Hero /> , <Content />) : '' }
       <Footer />
     </>
   );
