@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './pages'
 import About from './pages/about';
 import Contact from './pages/Contact';
+import port from './pages/port'; //portfolio component test
 import Portfolio from './pages/portfolio';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/about" exact component={About} />
         <Route path="/portfolio" exact component={Portfolio} />
         <Route path="/contact" exact component={Contact} />
+        <Route path="/port" exact component={port} />
       </Switch>
       <Footer />
     </>
