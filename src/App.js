@@ -43,6 +43,11 @@ function App() {
     <>
       <Navbar toggle={ toggle } />
       <Dropdown isOpen={isOpen} toggle={ toggle } />
+      
+      
+      { int === false ? (<Hero /> , <Content />) : 
+      (
+      
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
@@ -51,7 +56,7 @@ function App() {
         <Route path="/port" exact component={port} />
       </Switch>
       
-      { int === false ? (<Hero /> , <Content />) : '' }
+      )}
       <Footer />
     </>
   );
