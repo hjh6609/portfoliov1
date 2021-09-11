@@ -25,7 +25,7 @@ function App() {
   //i still don't understand this code.S 
   useEffect(() => {
     const hideMenu = () => {
-      console.log(callUrl);
+      
       if (window.innerWidth > 768 && isOpen) {
         setIsOpen(false)
         console.log('1 realize');
@@ -45,7 +45,7 @@ function App() {
       <Dropdown isOpen={isOpen} toggle={ toggle } />
       
       
-      { callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? (<Hero /> , <Content />) : 
+      { callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? (<Hero />) : 
       (
       
       <Switch>
