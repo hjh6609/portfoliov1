@@ -56,7 +56,7 @@ const Portfolio = () => {
                     React &nbsp; html &nbsp; CSS 
                 </p>
                 <span className="pro-button">
-                    <button onClick={() => window.open('https://quiz-app-drab.vercel.app/', '_blank')}><strong>View Site</strong></button>
+                    <button onClick={() => window.open('https://affectionate-hugle-775944.netlify.app/', '_blank')}><strong>View Site</strong></button>
                 </span>
                 <span className="pro-button">
                     <button onClick={() => window.open('https://github.com/hjh6609/quiz-app', '_blank')}><strong>View Github</strong></button>

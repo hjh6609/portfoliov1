@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router';
 import './App.css';
+import Content from './components/Content';
 import Dropdown from './components/Dropdown';
 import Footer from './components/Footer';
+import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Home from './pages'
 import About from './pages/about';
@@ -43,6 +45,8 @@ function App() {
         <Route path="/contact" exact component={Contact} />
         <Route path="/port" exact component={port} />
       </Switch>
+      <Hero />
+      <Content />
       <Footer />
     </>
   );
