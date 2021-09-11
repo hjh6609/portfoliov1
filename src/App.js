@@ -25,7 +25,7 @@ function App() {
   //i still don't understand this code.S 
   useEffect(() => {
     const hideMenu = () => {
-      
+
       if (window.innerWidth > 768 && isOpen) {
         setIsOpen(false)
         console.log('1 realize');
@@ -44,9 +44,7 @@ function App() {
       <Navbar toggle={ toggle } />
       <Dropdown isOpen={isOpen} toggle={ toggle } />
       
-      
-      { callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? (<Hero />) : 
-      (
+      {callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? (<Hero />) : ''}
       
       <Switch>
         <Route path="/" exact component={Home} />
@@ -55,8 +53,6 @@ function App() {
         <Route path="/contact" exact component={Contact} />
         <Route path="/port" exact component={port} />
       </Switch>
-      
-      )}
       <Footer />
     </>
   );
