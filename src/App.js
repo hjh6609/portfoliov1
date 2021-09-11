@@ -81,10 +81,15 @@ function App() {
       </div> : ('')  
       } */}
       
+        {callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? <Hero /> : 'stupid'}
+        {callUrl === 'https://hjh6609.github.io/portfolio-Lucy/about' ||
+          callUrl === 'https://hjh6609.github.io/portfolio-Lucy/portfolio' ||
+          callUrl === 'https://hjh6609.github.io/' ? 
+          
+         ('') : <Hero />}
+
       </Switch>
       
-      { callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? <Hero /> : 'stupid' }
-
        <Footer />
     </>
   );
