@@ -13,6 +13,7 @@ import Port from './pages/port'; //portfolio component test
 import Portfolio from './pages/portfolio';
 import List from './Helpers/List';
 import { data } from 'autoprefixer';
+import Hero from './components/Hero';
 
 
 function App() {
@@ -65,7 +66,7 @@ function App() {
       
 
 
-      { !isOpen ? <div>
+      {/* { !isOpen ? <div>
         {List.map(data => (
           <Port
             key={data.id}
@@ -78,11 +79,12 @@ function App() {
           />
         ))}
       </div> : ('')  
+      } */}
       
-      }
+      </Switch>
       
-      
-       </Switch>
+      { !isOpen ? ('') :  <Hero />  }
+
        <Footer />
     </>
   );
