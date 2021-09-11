@@ -38,19 +38,15 @@ function App() {
     }
   })
 
-  useEffect(() => {
-    
-    return (callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? (<Hero />) : (''));
-  })
+  // useEffect(() => {
+  //   return (callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? (<Hero />) : (''));
+  // })
 
 
   return (
     <>
       <Navbar toggle={ toggle } />
-      <Dropdown isOpen={isOpen} toggle={ toggle } />
-      
-      {callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? (<Hero />) : ('')}
-      
+      <Dropdown isOpen={isOpen} toggle={ toggle } />      
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
@@ -58,6 +54,8 @@ function App() {
         <Route path="/contact" exact component={Contact} />
         <Route path="/port" exact component={port} />
       </Switch>
+
+      {callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? (<Hero />) : ('')}
       <Footer />
     </>
   );
