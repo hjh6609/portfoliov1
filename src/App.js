@@ -83,7 +83,7 @@ function App() {
       
       </Switch>
       
-      { !isOpen ? ('') :  <Hero />  }
+      { isOpen ? ('') :  <Hero />  }
 
        <Footer />
     </>
