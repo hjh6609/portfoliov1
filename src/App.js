@@ -18,7 +18,7 @@ import Hero from './components/Hero';
 
 function App() {
 
-  //const [callUrl, setCallUrl] = useState(window.location.href);
+  const [callUrl, setCallUrl] = useState(window.location.href);
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -83,7 +83,7 @@ function App() {
       
       </Switch>
       
-      { isOpen ? ('') :  <Hero />  }
+      { isOpen && callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? ('') :  <Hero />  }
 
        <Footer />
     </>
