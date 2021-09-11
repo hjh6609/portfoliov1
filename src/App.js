@@ -11,12 +11,11 @@ import About from './pages/about';
 import Contact from './pages/Contact';
 import port from './pages/port'; //portfolio component test
 import Portfolio from './pages/portfolio';
-import browserHistory from 'history/createBrowserHistory'
 
 
 function App() {
 
-  const [int, setInt] = useState(true);
+  const callUrl = window.location.href;
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -26,6 +25,7 @@ function App() {
   //i still don't understand this code.S 
   useEffect(() => {
     const hideMenu = () => {
+      console.log(callUrl);
       if (window.innerWidth > 768 && isOpen) {
         setIsOpen(false)
         console.log('1 realize');
@@ -45,7 +45,7 @@ function App() {
       <Dropdown isOpen={isOpen} toggle={ toggle } />
       
       
-      { int === false ? (<Hero /> , <Content />) : 
+      { callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? (<Hero /> , <Content />) : 
       (
       
       <Switch>
