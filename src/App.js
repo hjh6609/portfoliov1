@@ -83,7 +83,7 @@ function App() {
       
       </Switch>
       
-      { isOpen && callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? ('') :  <Hero />  }
+      { callUrl === 'https://hjh6609.github.io/portfolio-Lucy/' ? <Hero /> : 'stupid' }
 
        <Footer />
     </>
