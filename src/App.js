@@ -38,22 +38,20 @@ function App() {
 
 
 
-  //paging
-  useEffect(() => {
-    const fetchPosts = async () => {
-      setLoading(true);
-      //const res = await axios.get(List);
-      //console.log(res);
-      //setPosts(res.data);
-      setPosts(List)
-      setLoading(false);
-    }
-    fetchPosts();
-  }, []);
+  
+  // useEffect(() => {
+    
+  //   if (window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/') {
+  //     return <Hero />
+  //   }else{
+  //     return "";
+  //   }
+  // });
 
   //useEffect is load when page is always loading, but '(){}' << this code always /
   //({}, [dept]) << when dept is transfomeded //({}[]) << just only one . I understand still yet.
   useEffect(() => {
+
     const hideMenu = () => {
 
       if (window.innerWidth > 768 && isOpen) {
@@ -66,6 +64,7 @@ function App() {
     return () => {
       window.removeEventListener('realize', hideMenu)
     }
+    
   })
   
   
@@ -89,8 +88,7 @@ function App() {
         window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/portfolio' ||
         window.location.href === 'https://hjh6609.github.io/'
         // || window.location.href === 'https://hjh6609.github.io/port'
-        ?
-        ('　') : <Hero />
+        ? ('　') : ( <Hero /> )
       }
 
       {/* {window.location.href  === "http://localhost:3000/port" ?
