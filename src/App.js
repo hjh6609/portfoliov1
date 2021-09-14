@@ -93,7 +93,7 @@ function App() {
         ('　') : <Hero />
       }
 
-      {window.location.href  === "http://localhost:3000/port" ?
+      {/* {window.location.href  === "http://localhost:3000/port" ?
         (
           <div>
           {List.map(data => (
@@ -109,7 +109,7 @@ function App() {
           ))}
           </div>
         ) : ('　')
-      }
+      } */}
       
      
        <Footer />
