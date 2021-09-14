@@ -82,13 +82,13 @@ function App() {
       </Switch>
 
       
-      {window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/' ? (<Hero />) : ('　')}
+      {window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/' ?   ('　') : (<Hero />)}
         
       {window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/about' ||
         window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/portfolio' ||
         window.location.href === 'https://hjh6609.github.io/'
         // || window.location.href === 'https://hjh6609.github.io/port'
-        ? ('　') : ( <Hero /> )
+        ? ( <Hero /> ) :  ('k　')  
       }
 
       {/* {window.location.href  === "http://localhost:3000/port" ?
