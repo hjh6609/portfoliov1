@@ -9,24 +9,13 @@ import Navbar from './components/Navbar';
 import Home from './pages'
 import About from './pages/about';
 import Contact from './pages/Contact';
-import Port from './pages/port'; //portfolio component test
-import Portfolio from './pages/portfolio';
-import List from './Helpers/List';
+//import Port from './pages/port'; //portfolio component test
+import Project from './pages/portfolio';
 import Hero from './components/Hero';
-import Posts from './components/Posts';
-import Pagination from './components/Pagination';
 
 
 function App() {
-  //paging/////////
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(3);
-  //paging////////////////
 
-  //Change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -76,7 +65,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
-        <Route path="/portfolio" exact component={Portfolio} />
+        <Route path="/portfolio" exact component={Project} />
         <Route path="/contact" exact component={Contact} />
         {/* <Route path="/port" exact component={Port} /> */}
       </Switch>
