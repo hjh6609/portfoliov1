@@ -33,20 +33,20 @@ function App() {
     setIsOpen(!isOpen)
   };
   
-  const [url2] = useState("http://localhost:3000/port");
+  //const [url2] = useState("http://localhost:3000/port");
   //const [url2, setUrl2] = useState("http://hjh6609.github.io/port/");
 
 
 
   
-  // useEffect(() => {
+  useEffect(() => {
     
-  //   if (window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/') {
-  //     return <Hero />
-  //   }else{
-  //     return "";
-  //   }
-  // });
+    if (window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/') {
+      return <Hero />
+    }else{
+      return "";
+    }
+  });
 
   //useEffect is load when page is always loading, but '(){}' << this code always /
   //({}, [dept]) << when dept is transfomeded //({}[]) << just only one . I understand still yet.
@@ -80,16 +80,8 @@ function App() {
         <Route path="/contact" exact component={Contact} />
         {/* <Route path="/port" exact component={Port} /> */}
       </Switch>
-
       
       {window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/' ?   (<Hero />) : ('j')  }
-        
-      {/* {window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/about' ||
-        window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/portfolio' ||
-        window.location.href === 'https://hjh6609.github.io/'
-        // || window.location.href === 'https://hjh6609.github.io/port'
-        ? ( <Hero /> ) :  ('k　')  
-      } */}
 
       {/* {window.location.href  === "http://localhost:3000/port" ?
         (

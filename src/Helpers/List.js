@@ -1,7 +1,7 @@
 import ImageOne from '../images/weather-app.jpg';
 import ImageTwo from '../images/gallery.jpg';
 import ImageThree from '../images/quiz-app.jpg';
-import ImageFour from '../images/starbucks.jpg';
+import ImageFour from '../images/quiz-app.jpg';
 
 const List = [
     {
