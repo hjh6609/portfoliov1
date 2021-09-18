@@ -68,11 +68,10 @@ function App() {
         <Route path="/portfolio" exact component={Project} />
         <Route path="/contact" exact component={Contact} />
         {/* <Route path="/port" exact component={Port} /> */}
+        {window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/' ?   <Hero /> : 'ab'  }
       </Switch>
       
       
-      {window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/' ?   <Hero /> : 'a'  }
-
       {/* {window.location.href  === "http://localhost:3000/port" ?
         (
           <div>
