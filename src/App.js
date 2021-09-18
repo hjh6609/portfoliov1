@@ -70,6 +70,7 @@ function App() {
         {/* <Route path="/port" exact component={Port} /> */}
       </Switch>
       
+      
       {window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/' ?   <Hero /> : 'a'  }
 
       {/* {window.location.href  === "http://localhost:3000/port" ?
