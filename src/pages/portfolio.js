@@ -63,7 +63,7 @@ const Portfolio = () => {
                 <span className="pro-button">
                     <button onClick={() => window.open('https://github.com/hjh6609/starbucks', '_blank')}><strong>View Github</strong></button>
                 </span>
-            </div>
+            </div> 
         </div>
     
         {/* <div className="portfolio"> 
