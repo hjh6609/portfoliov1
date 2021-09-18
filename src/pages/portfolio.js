@@ -1,13 +1,33 @@
 import React from 'react'
-import ImageOne from '../images/weather-app.jpg';
+//import ImageOne from '../images/weather-app.jpg';
 import ImageTwo from '../images/gallery.jpg';
 import ImageThree from '../images/quiz-app.jpg';
 import ImageFour from '../images/star2.jpg';
 import ImageFive from '../images/star1.jpg';
+import ImageSix from '../images/adminapp.jpg';
 
 const Portfolio = () => {
     return (
         <>
+        <div className="portfolio"> {/*  bg-green-100 */ }
+            <img src={ImageSix} alt="" className="h-full rounded 
+            mb-20 shadow" />
+            <div className="center-content font-bold">
+                <h2 className="text-2xl mb-2">
+                    Admin App
+                </h2>
+                <p className="mb-2">
+                    React &nbsp; html &nbsp; CSS &nbsp; Material
+                </p>
+                <span className="pro-button">
+                    <button onClick={() => window.open('https://keen-austin-519956.netlify.app/', '_blank')}><strong>View Site</strong></button>
+                </span>
+                <span className="pro-button">
+                    <button onClick={() => window.open('https://github.com/hjh6609/admin-app', '_blank')}><strong>View Github</strong></button>
+                </span>
+            </div>
+        </div>     
+
         <div className="portfolio"> {/*  bg-green-100 */ }
             <img src={ImageFive} alt="" className="h-full rounded 
             mb-20 shadow" />
@@ -44,9 +64,9 @@ const Portfolio = () => {
                     <button onClick={() => window.open('https://github.com/hjh6609/starbucks', '_blank')}><strong>View Github</strong></button>
                 </span>
             </div>
-        </div>       
-            
-        <div className="portfolio"> {/*  bg-green-100 */ }
+        </div>
+    
+        {/* <div className="portfolio"> 
             <img src={ImageOne} alt="" className="h-full rounded 
             mb-20 shadow" />
             <div className="center-content font-bold">
@@ -63,7 +83,7 @@ const Portfolio = () => {
                     <button onClick={() => window.open('https://github.com/hjh6609/weather-re-act', '_blank')}><strong>View Github</strong></button>
                 </span>
             </div>
-        </div>
+        </div>  */}
 
         <div className="portfolio"> {/*  bg-green-100 */ }
             <img src={ImageTwo} alt="" className="h-full rounded 
