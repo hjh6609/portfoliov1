@@ -28,14 +28,14 @@ function App() {
 
 
   
-  useEffect(() => {
+  // useEffect(() => {
     
-    if (window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/') {
-      return <Hero />
-    }else{
-      return "";
-    }
-  });
+  //   if (window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/') {
+  //     return <Hero />
+  //   }else{
+  //     return "";
+  //   }
+  // });
 
   //useEffect is load when page is always loading, but '(){}' << this code always /
   //({}, [dept]) << when dept is transfomeded //({}[]) << just only one . I understand still yet.
@@ -68,7 +68,7 @@ function App() {
         <Route path="/portfolio" exact component={Project} />
         <Route path="/contact" exact component={Contact} />
         {/* <Route path="/port" exact component={Port} /> */}
-        {window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/' ?   <Hero /> : 'ab'  }
+        {/* {window.location.href === 'https://hjh6609.github.io/portfolio-Lucy/' ?   <Hero /> : 'ab'  } */}
       </Switch>
       
       
